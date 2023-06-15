@@ -28,17 +28,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 70%;
+    width: 90%;
 }
 
 .card-list .card {
     margin: 10px 15px;
-    height: 250px;
+    height: 400px;
     flex: 1;
     max-width: 500px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     padding: 40px 30px;
     box-shadow: 0 0 10px #ccc;
     -moz-box-shadow: 0 0 10px #ccc;
@@ -62,15 +61,17 @@
 .card-list .card .card-index {
     color: var(--primary);
     font-size: 25px;
+    margin-bottom: 40px;
 }
 
 .card-list .card .card-title {
     font-size: 22px;
+    margin-bottom: 20px;
 }
 
 .card-list .card .card-desc {
     color: #929191;
-
+    margin-bottom: 10px;
 }
 
 .card-list .card > a, .card-list .card > a:visited {
@@ -100,5 +101,18 @@
 
     .card-list .card {
         min-height: 280px;
+        justify-content: space-between;
+    }
+
+    .card-list .card .card-index {
+        margin: 0;
+    }
+
+    .card-list .card .card-title {
+        margin: 0;
+    }
+
+    .card-list .card .card-desc {
+        margin: 0;
     }
 }
