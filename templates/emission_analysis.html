@@ -4,22 +4,108 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <title>Emission Analysis</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/emission-analysis.css') }}">
 </head>
 <body>
-    <h2>Emission Analysis</h2>
+    <div class="container">
+        <div class="wrapper">
+            <div class="content">
+                <div class="title">
+                    <h2>Emission Analysis</h2>
+                </div>
+                
+                <div class="desc">
+                    <p class="desc-title">Welcome to our CO2 Emission Analysis section.</p>
+                    <p>This feature provides insights into CO2 emissions from various vehicles, helping you understand their environmental impact. 
+                        Dive into user-friendly charts and graphs that illustrate key aspects of vehicle emissions based on factors like fuel type, engine size, and model.
+                    </p>
+                </div>
 
-    <form action="/" method="post">
-        <div class="form-group">
-          <img src="https://ourworldindata.org/uploads/2020/10/Transport-CO2-emissions-by-mode-bar-chart-768x303.png">
-          <h2>Check CO2 emission</h2>
-          <label for="text">Engine Size</label>
-          <input type="text" class="form-control" id="text" name="Engine" placeholder="Enter the size of your engine">
+                <div class="co2-image">
+                    <img src="{{ url_for('static', filename='images/co2-image.png') }}" alt="CO2 analysis image">
+                </div>
+
+                <div class="desc">
+                    By seeing this plot, we can conclude:
+                    <ol>
+                        <li>Overall Chiron used  are reported high for car models that generating most of CO2 with more than 500 g/km that have been produced.</li>
+                        <li>Aventador and wagon is the second highest while other models generate the same number of emissions.</li>
+                        <li>On flip side, all Aventador model consistently produce the same number of emissions.</li>
+                    </ol>
+                </div>
+
+                <div class="fuel-type-image">
+                    <img src="{{ url_for('static', filename='images/fuel-type-image.png') }}" alt="Fuel type image">
+                </div>
+
+                <div class="desc">
+                    This graph leads us to understand that:
+                    <ol>
+                        <li>Ethanol is the highest related to CO2 emission for the fuel type used.</li>
+                        <li>Diesel and regular gasoline hold at the same place related with CO2 emission produced but premium gasoline is the second highest.</li>
+                        <li>Natural gas is the lowest in rank that is below 200 g/km.</li>
+                    </ol>
+                </div>
+
+                <div class="frequently-image">
+                    <img src="{{ url_for('static', filename='images/frequently-image.png') }}" alt="Most frequently used fuel type">
+                </div>
+
+                <div class="desc">
+                    This visual representation clearly indicates that:
+                    <ol>
+                        <li>Regular gasoline is the highest used by citizen around the world.</li>
+                        <li>Ethanol and Diesel is among the lowest from the other fuel type.</li>
+                        <li>As of now, there is no vehicle used natural gas on their car.</li>
+                    </ol>
+                </div>
+
+                <div class="consumption-image">
+                    <img src="{{ url_for('static', filename='images/consumption-image.png') }}" alt="Fuel composition comb (mpg)">
+                </div>
+
+                <div class="desc">
+                    The graph allows us to draw the conclusion that:
+                    <ol>
+                        <li>Higher mpg means better fuel efficiency.</li>
+                        <li>18 mpg is the highest as the fuel efficiency is lowest and it produce more than 350 g/km.</li>
+                        <li>48 only produce under 150 g/km as it provides better fuel efficiency.</li>
+                    </ol>
+                </div>
+
+                <div class="avg-emission-image">
+                    <img src="{{ url_for('static', filename='images/avg-emission-image.png') }}" alt="Average emission">
+                </div>
+
+                <div class="desc">
+                    Interpreting this plot, it can be deduced that:
+                    <ol>
+                        <li>Van is the highest on average emission among the other vehicle class which is 350 to 400 g/km.</li>
+                        <li>Small vehicle class produce the lowest CO2 which is below 250 g/km.</li>
+                        <li>The CO2 produced is highly correlated with the type of fuel used but not so with the vehicle class.</li>
+                    </ol>
+                </div>
+
+                <div class="insights">
+                    <h2>Acionable insights</h2>
+                    <p>High-Emission Models: Certain car models were found to have significantly higher CO2 emissions than others. This suggests an opportunity to 
+                        prioritize engineering and design changes to these models to improve their fuel efficiency and reduce their emissions.
+                    </p>
+                    <strong>Action: Identify and prioritize design improvements for high-emission car models.</strong>
+                    <br> <br> <br>
+                    <p>Fuel Efficiency Correlation: There is a strong negative correlation between fuel efficiency and CO2 emissions. The more fuel-efficient a vehicle is, the less CO2 it tends to emit.</p>
+                    <strong>Action: Invest more in the development and promotion of fuel-efficient and hybrid vehicles.</strong>
+                    <br> <br> <br>
+                    <p>Fuel Type Impact: The type of fuel used significantly influences CO2 emissions. Vehicles using gasoline tend to emit more CO2 compared to those using diesel, while hybrid and electric vehicles have the lowest emissions.</p>
+                    <strong>Action: Increase the promotion and development of diesel, hybrid, and electric vehicles due to their lower emission profiles. Additionally, investigate the feasibility of alternative fuels like biodiesel or hydrogen.</strong>
+                    <br> <br> <br>
+                    <p>Emission Standards: Some car models are struggling to meet recent, more stringent emission standards. This could potentially lead to regulatory fines and damage to the brand's reputation.</p>
+                    <strong>Action: Focus resources on bringing these models up to the required standards or consider phasing them out in favour of lower-emission models.</strong>
+                </div>
+
+            </div>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-
-    <p>{{ emission_value }}</p>
+    </div>
 </body>
 </html>

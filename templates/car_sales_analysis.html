@@ -5,8 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Sales Analysis</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/car-sales-analysis.css') }}">
 </head>
 <body>
-    <h2>Car Sales Analysis</h2>
+    <div class="container">
+        <div class="wrapper">
+            <div class="content">
+                <div class="title">
+                    <h2>Car Sales Analysis</h2>
+                </div>
+                
+                <div class="desc">
+                    <p class="desc-title">Welcome to our Car Sales Analysis section.</p>
+                    <br>
+                    <p>This feature provides you with a comprehensive analysis of car sales data, offering valuable insights into trends, preferences, and market performance. You'll find interactive charts and graphs showcasing sales by model, make, year, and other relevant factors.</p>
+                    <br>
+                    <p>We will make a complete analysis about which feature has more impact on car sales and carry out result of this.</p>
+                </div>
+
+                <div class="car-brand-image">
+                    <img src="{{ url_for('static', filename='images/car-brand-image.png') }}" alt="Top car brands on sale">
+                </div>
+
+                <div class="desc">
+                    By seeing this plot, we can conclude:
+                    <ol>
+                        <li>Volkswagen is the most sold cars, followed by Mercedes-Benz</li>
+                        <li>We can also get the statistical value along with it which makes our analysis more accurate.</li>
+                    </ol>
+                </div>
+
+                <div class="car-sales-image">
+                    <img src="{{ url_for('static', filename='images/car-sales-image.png') }}" alt="Car sales by year">
+                </div>
+
+                <div class="desc">
+                    This graph leads us to understand that:
+                    <ol>
+                        <li>Most number of cars were sold in year 2008 that is 1500 units sold.</li>
+                        <li>The content of the data is a bit outdated as there is no recent data to get.</li>
+                    </ol>
+                </div>
+
+                <div class="pie-chart-image">
+                    <img src="{{ url_for('static', filename='images/pie-chart-image.png') }}" alt="Cars sold by different body">
+                </div>
+
+                <div class="desc">
+                    This visual representation clearly indicates that:
+                    <ol>
+                        <li>Sedan body car types are the most sold. It's around 38.1%.</li>
+                        <li>Crossover body car types are the next with 21.6% and Hatch body type with 13.1%.</li>
+                    </ol>
+                </div>
+
+                <div class="carplot-image">
+                    <img src="{{ url_for('static', filename='images/carplot-image.png') }}" alt="Fuel composition comb (mpg)">
+                </div>
+
+                <div class="desc">
+                    The graph allows us to draw the conclusion that:
+                    <ol>
+                        <li>Majority of cars sold in price range of less than 30k are Petrol cars.</li>
+                        <li>There is no  engine type in Gas and other sold in the price range above 30K.</li>
+                    </ol>
+                </div>
+
+                <div class="vs-image">
+                    <img src="{{ url_for('static', filename='images/vs-image.png') }}" alt="Prive vs purchasing year">
+                </div>
+
+                <div class="desc">
+                    Interpreting this plot, it can be deduced that:
+                    <ol>
+                        <li>Majority of the cars with purchasing year 2008 or later is of price 50000 or lower.</li>
+                        <li>As the year increased, the number of cars sold also increase.</li>
+                    </ol>
+                </div>
+
+                <div class="insights">
+                    <h2>Acionable insights</h2>
+                    <p>Popular Models: Certain car models are consistently more popular, suggesting strong market acceptance. These models should be kept at the forefront of marketing campaigns and inventory management.</p>
+                    <strong>Action: Enhance marketing strategies and production for popular car models, leveraging their success to boost overall sales.</strong>
+                    <br> <br> <br>
+                    <p>Sales Seasonality: Sales data show a clear trend of higher sales during certain months or seasons. This could be related to new model releases, holiday seasons, or other factors.</p>
+                    <strong>Action: Plan marketing campaigns and inventory accordingly to take advantage of peak sales periods.</strong>
+                    <br> <br> <br>
+                    <p>Price Sensitivity: Analysis indicates a strong correlation between price and sales volume, suggesting that customers are price sensitive.</p>
+                    <strong>Action: Review pricing strategies and consider potential promotions or discounts to stimulate sales, while ensuring profitability.</strong>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </body>
 </html>
