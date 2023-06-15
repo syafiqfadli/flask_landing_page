@@ -1,0 +1,62 @@
+:root {
+    --primary: #36a327;
+}
+
+.footer-upper {
+    background-color: rgb(41, 41, 41);
+    color: white;
+    padding: 60px;
+}
+
+.footer-upper .location {
+    margin: 20px 0;
+}
+
+.footer-upper .social-media {
+    width: 180px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-upper .social-media .soc-med-logo {
+    border-radius: 50px;
+    background-color: rgb(88, 84, 84);
+    transition: background-color 0.2s linear;
+    -moz-transition: background-color 0.2s linear;
+    -webkit-transition: background-color 0.2s linear;
+}
+
+.footer-upper .social-media .soc-med-logo:hover {
+    background-color: var(--primary);
+}
+
+.footer-upper .social-media .soc-med-logo > a > img {
+    padding: 10px;
+    width: 25px;
+}
+
+.footer-lower {
+    padding: 40px;
+    color: white;
+    background-color: rgb(24, 22, 22);
+}
+
+.footer-lower > p {
+    text-align: center;
+}
+
+.footer-lower > p > span {
+    color: var(--primary);
+}
+
+@media only screen and (max-width: 800px) {
+    .footer-upper {
+        text-align: center;
+    }
+
+    .footer-upper .social-media {
+        margin: auto;
+        margin-top: 30px;
+    }
+}

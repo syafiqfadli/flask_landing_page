@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/home.css') }}">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="navbar">
+            <span class="title" style="padding-top: 0!important; padding-left: 20px;">AUTOCARS</span>
+
+            <div class="nav-items">
+                <a href="#home">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#service">SERVICES</a>
+                <a href="#contact">CONTACT</a>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <img src="{{ url_for('static', filename='images/car.jpg') }}" alt="test">
+            <div class="home-content" id="home">
+                <p class="hero-text">Automotive Industry - All about Analysis of Cars</p>
+                <p class="hero-paragraph"> Welcome to AutoCARs. Here you can get a complete analysis and recent trends about all types of Car in Automotive Industry. You can demonstrate how the Automotive Industry could harness data to take informed decisions.</p>
+                
+                <div class="start-button">
+                    <a href="#about" class="button-38">GET STARTED</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

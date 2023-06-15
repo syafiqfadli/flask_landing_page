@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/footer.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="footer-upper">
+        <h2>AutoCARs</h2>
+        <p class="location">V5B, UTP,<br>Seri Iskandar Perak, Malaysia</p>
+        <p><b>Phone: </b>+60 1154392012</p>
+        <p><b>Email: </b>car_analysis@gmail.com</p>
+        <div class="social-media">
+            <div class="soc-med-logo">
+                <a href="">
+                    <img src="{{ url_for('static', filename='images/twitter.png') }}" alt="Twitter Icon">
+                </a>
+            </div>
+            <div class="soc-med-logo">
+                <a href="">
+                    <img src="{{ url_for('static', filename='images/linkedin.png') }}" alt="LinkedIn Icon">
+                </a>
+            </div>
+            <div class="soc-med-logo">
+                <a href="">
+                    <img src="{{ url_for('static', filename='images/github.png') }}" alt="GitHub Icon">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-lower">
+        <p>Car Analysis by 
+            <span>Budi</span>
+        </p>
+    </div>
+</body>
+</html>

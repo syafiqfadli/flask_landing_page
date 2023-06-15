@@ -1,0 +1,104 @@
+:root {
+    --primary: #36a327;
+}
+
+.title-service {
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+}
+
+.title-service > h2 {
+    color: var(--primary);
+    padding: 20px 0;
+}
+
+.title-service > p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.card-list {
+    margin: auto;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.card-list .card {
+    margin: 10px 15px;
+    height: 250px;
+    flex: 1;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 30px;
+    box-shadow: 0 0 10px #ccc;
+    -moz-box-shadow: 0 0 10px #ccc;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    transition: background-color 0.2s linear;
+    -moz-transition: background-color 0.2s linear;
+    -webkit-transition: background-color 0.2s linear;
+}
+
+.card-list .card:hover {
+    background-color: var(--primary);
+}
+
+.card-list .card:hover .card-index, 
+.card-list .card:hover .card-title, 
+.card-list .card:hover .card-desc {
+    cursor: default;
+    color: white;
+}
+
+.card-list .card .card-index {
+    color: var(--primary);
+    font-size: 25px;
+}
+
+.card-list .card .card-title {
+    font-size: 22px;
+}
+
+.card-list .card .card-desc {
+    color: #929191;
+
+}
+
+.card-list .card > a, .card-list .card > a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.card-list .card .card-button {
+    background-color: rgb(238, 233, 233);
+    width: 80px;
+    padding: 10px;
+    text-align: center;
+}
+
+.card-list .card .card-button:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+    .title-service {
+        width: 70%;
+    }
+
+    .card-list {
+        flex-direction: column;
+    }
+
+    .card-list .card {
+        min-height: 280px;
+    }
+}

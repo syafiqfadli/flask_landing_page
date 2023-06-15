@@ -1,0 +1,124 @@
+.navbar
+{
+    text-transform: uppercase;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    color: white;
+    height: 60px;
+}
+
+.title
+{
+    font-size: 2em;
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-items
+{
+    list-style-type: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-items a
+{
+    text-decoration: none;
+    color: #FFFFFF;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.home-content
+{ 
+    text-align: center;
+    height: 550px;
+    padding-top: 370px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1020px; /* change to width 80% */
+    color: #FFFFFF;
+}
+
+.hero-text
+{
+    font-size: 2.3em;
+    font-weight: 700;
+}
+
+.hero-paragraph
+{
+    font-size: 1.2em;
+    font-weight: 200;
+    padding-top: 20px;
+}
+
+.button-38 {
+  background-color: #FFFFFF;
+  border: 0;
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #111827;
+  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: .875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  padding: 0.55rem 1.2rem;
+  text-align: center;
+  text-decoration: none #D1D5DB solid;
+  /*text-decoration-thickness: auto;*/
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-38:hover {
+  background-color: #36a327;
+  color: #FFFFFF;
+  transition-duration: 0.3s;
+}
+
+.button-38:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.button-38:focus-visible {
+  box-shadow: none;
+}
+
+.start-button
+{
+    padding-top: 40px;
+}
+
+.wrapper img
+{
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    position: absolute;
+    object-fit: cover;
+}
+
+/* @media only screen and (max-width: 525px)
+{
+    .nav-items a
+    {
+        display: hidden;
+    }
+} */

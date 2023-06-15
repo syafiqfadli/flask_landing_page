@@ -1,0 +1,63 @@
+:root {
+    --primary: #36a327;
+}
+
+.title-contact {
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+}
+
+.title-contact > h2 {
+    color: var(--primary);
+    padding: 20px 0;
+}
+
+.title-contact > p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.contact-list {
+    margin: auto;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.contact-list .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-start;
+    flex: 1;
+    height: 150px;
+    margin-bottom: 30px;
+}
+
+.contact-list .contact > i {
+    font-size: 48px;
+    color: var(--primary);
+}
+
+.contact-list .contact .contact-title {
+    margin: 15px 0;
+    color: gray;
+}
+
+.contact-list .contact .contact-desc {
+    text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .contact-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
