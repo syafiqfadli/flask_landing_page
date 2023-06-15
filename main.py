@@ -33,7 +33,7 @@ def predict_car_price():
 def predict_emission():
     if request.method == "POST":
         myDict = request.form
-        engine = float(myDict['Engine'])
+        engine = float(myDict['engine'])
         input_size = [engine]
         value = regr.predict([input_size])[0][0]
 
